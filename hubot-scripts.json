@@ -4,5 +4,6 @@
   "bang-bang.coffee",
   "hangout.coffee",
   "spark.coffee",
-  "rubygems"
+  "rubygems.coffee",
+  "darksky.coffee"
 ]
