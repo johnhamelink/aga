@@ -6,5 +6,6 @@
   "spark.coffee",
   "rubygems.coffee",
   "darksky.coffee",
-  "nationalrail.coffee"
+  "nationalrail.coffee",
+  "sendgrid.coffee"
 ]
