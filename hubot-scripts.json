@@ -7,5 +7,6 @@
   "rubygems.coffee",
   "darksky.coffee",
   "nationalrail.coffee",
-  "sendgrid.coffee"
+  "sendgrid.coffee",
+  "twitter_mention.coffee"
 ]
