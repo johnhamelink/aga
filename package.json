@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
-    "hubot-hipchat": "^2.7.5",
+    "hubot-hipchat": ">= 2.7.5",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
     "textspark": "^0.1.0",
     "hubot-datadog": "~0.1"
