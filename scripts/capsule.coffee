@@ -38,7 +38,7 @@ module.exports = (robot) ->
     ret += "#{person['lastName']} " if person['lastName']
     ret += "- " if person['jobTitle'] || person['organisationName']
     ret += "#{person['jobTitle']} " if person['jobTitle']
-    ret += "at #{person['organisationName']}" if person['organisationName']
+    ret += "at #{person['organisationName']} " if person['organisationName']
     ret += "- #{partyUrl person['id']}"
     msg.reply ret
 
