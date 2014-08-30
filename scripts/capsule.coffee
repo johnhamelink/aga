@@ -81,7 +81,6 @@ module.exports = (robot) ->
     msg.reply "Searching for contacts matching '#{search_term}'..."
     robot.http("#{apiUrl()}party?q=#{search_term}").header('accept', 'application/json').get() (err, res, body) ->
       msg.reply "Error: #{err}" if err
-      json = JSON.parse body
       msg.reply body if isDebug()
-      msg.reply err if isDebug()
+      json = JSON.parse body
       handleSearch json["parties"], msg, search_term
