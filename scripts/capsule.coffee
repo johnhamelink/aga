@@ -6,7 +6,7 @@
 #   HUBOT_CAPSULE_API_TOKEN - set the capsule API key
 #   HUBOT_CAPSULE_DEBUG - set whether to run in debug mode
 # Commands:
-#   hubot: capsule search <search term>
+#   hubot: capsule search <search term> - Search for a contact
 #
 # Author:
 #  John Hamelink <john@farmer.io>

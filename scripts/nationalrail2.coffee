@@ -8,8 +8,8 @@
 #   HUBOT_DEFAULT_STATION - set the default from station (nearest to your home/office)
 #
 # Commands:
-#   hubot: trains from <departure station> to <arrival station>
-#   hubot: trains to <arrival station>
+#   hubot: trains from <departure station> to <arrival station> - Get trains from one station to another
+#   hubot: trains to <arrival station> - Get trains from the default station to another
 #
 # Notes:
 #   Inspired by the work of JamieMagee - this version doesn't need

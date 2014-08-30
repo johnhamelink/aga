@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot: qr me <url>
+#   hubot: qr me <url> - turn a URL into a QR Code
 #
 # Notes:
 #   Makes use of Google's ChartAPI

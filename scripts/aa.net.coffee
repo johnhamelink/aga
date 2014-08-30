@@ -5,7 +5,7 @@
 #   HUBOT_AA_NET_API_USER - set the AA.net API Username
 #   HUBOT_AA_NET_API_PASS - set the AA.net API Password
 # Commands:
-#   hubot: isp quota
+#   hubot: isp quota - Show how much of the Quota has been used
 #
 # Author:
 #  John Hamelink <john@farmer.io>
