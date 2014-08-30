@@ -4,7 +4,7 @@
 # Configuration:
 #   HUBOT_CAPSULE_SUBDOMAIN - set the capsule account name
 #   HUBOT_CAPSULE_API_TOKEN - set the capsule API key
-#
+#   HUBOT_CAPSULE_DEBUG - set whether to run in debug mode
 # Commands:
 #   hubot: capsule search <search term>
 #
@@ -13,6 +13,12 @@
 
 
 module.exports = (robot) ->
+
+  # Debug flag
+  isDebug = () ->
+    return process.env.HUBOT_CAPSULE_DEBUG if process.env.HUBOT_CAPSULE_DEBUG
+    return false
+
   # Build the base URL for the capsule API
   apiUrl = () ->
     ret = "https://" + process.env.HUBOT_CAPSULE_API_TOKEN
@@ -74,4 +80,5 @@ module.exports = (robot) ->
     robot.http("#{apiUrl()}party?q=#{search_term}").header('accept', 'application/json').get() (err, res, body) ->
       msg.reply "Error: #{err}" if err
       json = JSON.parse body
+      msg.reply body if isDebug()
       handleSearch json["parties"], msg, search_term
