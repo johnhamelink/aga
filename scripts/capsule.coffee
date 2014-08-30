@@ -16,7 +16,9 @@ module.exports = (robot) ->
 
   # Debug flag
   isDebug = () ->
-    return process.env.HUBOT_CAPSULE_DEBUG if process.env.HUBOT_CAPSULE_DEBUG
+    if process.env.HUBOT_CAPSULE_DEBUG
+      return true if process.env.HUBOT_CAPSULE_DEBUG == "true"
+      return false if process.env.HUBOT_CAPSULE_DEBUG == "false"
     return false
 
   # Build the base URL for the capsule API
