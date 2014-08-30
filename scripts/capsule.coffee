@@ -48,14 +48,14 @@ module.exports = (robot) ->
     ret += "#{person['jobTitle']} " if person['jobTitle']
     ret += "at #{person['organisationName']} " if person['organisationName']
     ret += "- #{partyUrl person['id']}"
-    msg.reply ret
+    msg.send ret
 
   # Build a reply for an org
   replyOrg = (org, msg) ->
     ret = "Organisation: "
     ret += "#{org['name']} " if org['name']
     ret += "- #{partyUrl org['id']}"
-    msg.reply ret
+    msg.send ret
 
   # Handle the search query
   handleSearch = (parties, msg, search_term) ->
@@ -78,12 +78,12 @@ module.exports = (robot) ->
 
   robot.hear /capsule search (.+)/i, (msg) ->
     search_term = msg.match[1]
-    msg.reply "Searching for contacts matching '#{search_term}'..."
+    msg.send "Searching for contacts matching '#{search_term}'..."
     req = "#{apiUrl()}party?q=#{search_term}"
     robot.http(req).header('accept', 'application/json').get() (err, res, body) ->
-      msg.reply "Error: #{err}" if err
+      msg.send "Error: #{err}" if err
       if isDebug()
-        msg.reply req
-        msg.reply body
+        msg.send req
+        msg.send body
       json = JSON.parse body
       handleSearch json["parties"], msg, search_term

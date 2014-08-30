@@ -29,7 +29,7 @@ module.exports = (robot) ->
     ).get() (err, res, body) ->
       json = JSON.parse(body)
       if json.trains.length
-        msg.reply "Next trains from: #{from.name} to #{to.name}:"
+        msg.send "Next trains from: #{from.name} to #{to.name}:"
         i = 0
 
         while i < json.trains.length
@@ -41,7 +41,7 @@ module.exports = (robot) ->
             msg.send response
           i++
       else
-        msg.reply "Sorry, there's no trains today"
+        msg.send "Sorry, there's no trains today"
 
   getStation = (msg, query, callback) ->
     robot.http("http://ojp.nationalrail.co.uk/find/stationsDLRLU/" + encodeURIComponent(query)).get() (err, res, body) ->
@@ -53,7 +53,7 @@ module.exports = (robot) ->
 
         callback station
       else
-        msg.reply "Couldn't find station: " + query
+        msg.send "Couldn't find station: " + query
 
   robot.hear /trains from (.+) to (.+)/i, (msg) ->
     from = msg.match[1]
