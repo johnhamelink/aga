@@ -83,4 +83,5 @@ module.exports = (robot) ->
       msg.reply "Error: #{err}" if err
       json = JSON.parse body
       msg.reply body if isDebug()
+      msg.reply err if isDebug()
       handleSearch json["parties"], msg, search_term
