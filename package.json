@@ -25,7 +25,12 @@
     "hubot-hipchat": ">= 2.7.5",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
     "textspark": "^0.1.0",
-    "hubot-datadog": "~0.1"
+    "hubot-datadog": "~0.1",
+    "hubot-andrews-and-arnold": ">= 0.0.1",
+    "hubot-qr": ">= 0.0.1",
+    "hubot-nationalrail": ">= 0.0.1",
+    "hubot-whiteboardcleaner": ">= 0.0.1",
+    "hubot-capsule": ">= 0.0.1"
   },
   "engines": {
     "node": ">= 0.8.x",
