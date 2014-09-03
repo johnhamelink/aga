@@ -48,4 +48,4 @@ module.exports = (robot) ->
     msg.send "Scrub Scrub..."
     url = msg.match[1]
     tmp = downloadFile(url, msg)
-    msg.send tmp['path']
+    msg.send "Boom: #{tmp['path']}?extension=.jpg"
