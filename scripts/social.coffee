@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.router.post "/hubot/social/sync", (req, res) ->
     arg = req.body
     res.end "OK"
-    robot.messageRoom "marketing", "Social article sync completed: #{arg.downloaded} entries downloaded, #{arg.queued} entries queued, #{arg.pruned} entries pruned."
+    robot.messageRoom '146776_marketing@conf.hipchat.com', "Social article sync completed: #{arg.downloaded} entries downloaded, #{arg.queued} entries queued, #{arg.pruned} entries pruned."
 
   robot.respond /show social stats$/i, (msg) ->
     robot.http("#{process.env.HUBOT_FEED_SERVER}/stats").get() (err, res, body) ->
