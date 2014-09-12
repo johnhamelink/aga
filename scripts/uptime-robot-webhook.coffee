@@ -28,5 +28,5 @@ module.exports = (robot) ->
 
     result_string = "ALERT: #{name} (#{url}) has been marked as #{alert_type}"
     result_string = "#{result_string} - #{alert}" if alert.length > 0
-    robot.messageRoom "All", result_string
+    robot.messageRoom "146776_engineering@conf.hipchat.com", result_string
     res.end "OK"
