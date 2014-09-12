@@ -18,10 +18,9 @@ module.exports = (robot) ->
   process.env.HUBOT_FEED_SERVER = "http://feed-buffer.herokuapp.com"
 
   robot.router.post "/hubot/social/sync", (req, res) ->
-    msg = req.body.message
-    json = JSON.parse(msg)
-    robot.messageRoom "marketing", "Social article sync completed: #{json.downloaded} entries downloaded, #{json.queued} entries queued, #{json.pruned} entries pruned."
-    res.end
+    arg = req.body
+    res.end "OK"
+    robot.messageRoom '146776_marketing@conf.hipchat.com', "Social article sync completed: #{arg.downloaded} entries downloaded, #{arg.queued} entries queued, #{arg.pruned} entries pruned."
 
   robot.respond /show social stats$/i, (msg) ->
     robot.http("#{process.env.HUBOT_FEED_SERVER}/stats").get() (err, res, body) ->
