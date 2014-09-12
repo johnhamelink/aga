@@ -23,7 +23,7 @@ module.exports = (robot) ->
     if req.query.alertDetails
       alert = req.query.alertDetails
 
-    alert_type = "Down" if alert_type == 1
+    alert_type = "Down" if alert_type == "1"
     alert_type = "Up"
 
     result_string = "ALERT: #{name} (#{url}) has been marked as #{alert_type}"
