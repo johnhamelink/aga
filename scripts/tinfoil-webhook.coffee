@@ -22,7 +22,7 @@ module.exports = (robot) ->
 
     status = req.body.scan_started_webhook.scan.status
     site = req.body.scan_started_webhook.site.name
-    result_string = "Started scan of #{site}: #{status}"
+    result_string = "Started Tinfoil scan of #{site}: #{status}"
     robot.messageRoom "146776_engineering@conf.hipchat.com", result_string
     res.end "OK"
     
@@ -30,6 +30,6 @@ module.exports = (robot) ->
 
     status = req.body.scan_finished_webhook.scan.status
     site = req.body.scan_finished_webhook.site.name
-    result_string = "Finished scan of #{site}: #{status}"
+    result_string = "Finished Tinfoil scan of #{site}: #{status}"
     robot.messageRoom "146776_engineering@conf.hipchat.com", result_string
     res.end "OK"
