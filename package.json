@@ -31,7 +31,9 @@
     "hubot-nationalrail": ">= 0.0.1",
     "hubot-whiteboardcleaner": ">= 0.0.1",
     "hubot-capsule": ">= 0.0.1",
-    "hubot-uptimerobot": ">= 0.0.3"
+    "hubot-uptimerobot": ">= 0.0.3",
+    "hubot-jenkins": ">= 1.0.2",
+    "hubot-jenkins-notifier": ">= 0.1.5"
   },
   "engines": {
     "node": ">= 0.8.x",
