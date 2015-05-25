@@ -5,6 +5,5 @@
   "hangout.coffee",
   "spark.coffee",
   "rubygems.coffee",
-  "darksky.coffee",
-  "sendgrid.coffee"
+  "darksky.coffee"
 ]
