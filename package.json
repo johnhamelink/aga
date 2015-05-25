@@ -33,7 +33,7 @@
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
     "hubot-slack": "^3.3.0",
     "hubot-uptimerobot": ">= 0.0.3",
-    "hubot-whiteboardcleaner": ">= 0.0.1",
+    "hubot-whiteboardcleaner": ">= 0.0.3",
     "textspark": "^0.1.0"
   },
   "engines": {
