@@ -22,18 +22,19 @@
   },
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
-    "hubot-hipchat": ">= 2.7.5",
-    "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "textspark": "^0.1.0",
-    "hubot-datadog": "~0.1",
     "hubot-andrews-and-arnold": ">= 0.0.1",
-    "hubot-qr": ">= 0.0.1",
-    "hubot-nationalrail": ">= 0.0.1",
-    "hubot-whiteboardcleaner": ">= 0.0.1",
     "hubot-capsule": ">= 0.0.1",
-    "hubot-uptimerobot": ">= 0.0.3",
+    "hubot-cron": ">= 0.1.0",
+    "hubot-datadog": "~0.1",
     "hubot-jenkins": ">= 1.0.2",
-    "hubot-jenkins-notifier": ">= 0.1.5"
+    "hubot-jenkins-notifier": ">= 0.1.5",
+    "hubot-nationalrail": ">= 0.0.1",
+    "hubot-qr": ">= 0.0.1",
+    "hubot-scripts": ">= 2.5.0 < 3.0.0",
+    "hubot-slack": "^3.3.0",
+    "hubot-uptimerobot": ">= 0.0.3",
+    "hubot-whiteboardcleaner": ">= 0.0.1",
+    "textspark": "^0.1.0"
   },
   "engines": {
     "node": ">= 0.8.x",
